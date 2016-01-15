@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 
 /**
  * Created by Cliff on 16-1-5.
@@ -30,4 +31,5 @@ public class Application {
             repository.save(new Person("Michelle", "Dessler"));
         };
     }
+
 }

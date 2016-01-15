@@ -3,19 +3,20 @@ package com.cliff.backend.sample;
 /**
  * Created by Cliff on 16-1-5.
  */
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-public class Person {
+@Table(name = "person")
+public class Person implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
 
+    @Column
     private String firstName;
+    @Column
     private String lastName;
 
     public Person() {
