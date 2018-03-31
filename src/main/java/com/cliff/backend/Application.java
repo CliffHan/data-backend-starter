@@ -24,11 +24,11 @@ public class Application {
     public CommandLineRunner initDatabase(PersonRepository repository) {
         return (args) -> {
             // save a couple of customers
-            repository.save(new Person("Jack", "Bauer"));
-            repository.save(new Person("Chloe", "O'Brian"));
-            repository.save(new Person("Kim", "Bauer"));
-            repository.save(new Person("David", "Palmer"));
-            repository.save(new Person("Michelle", "Dessler"));
+            // repository.save(new Person("Jack", "Bauer"));
+            // repository.save(new Person("Chloe", "O'Brian"));
+            // repository.save(new Person("Kim", "Bauer"));
+            // repository.save(new Person("David", "Palmer"));
+            // repository.save(new Person("Michelle", "Dessler"));
         };
     }
 
